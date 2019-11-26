@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GistMammo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="public/stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="public/stylesheets/scrolling-nav.css" rel="stylesheet">
+    <link href="public/stylesheets/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body id="page-top">
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="public/lib/jquery-3.3.1.min.js"></script>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-hsv.v0.1.min.js"></script>
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-inverse fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span>GistMammo</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#Overview">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#Method">Methods</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#download">Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#paper">Paper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">Group</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#acknowledgement">Acknowledgement</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- <header class="page-heading text-white">
+        <div class="container text-center">
+            <h1>
+                <span class="red-font">SciMem</span> Dataset</h1>
+            <p class="lead">Scientific Visualization Memorability Dataset</p>
+        </div>
+    </header> -->
+
+    <section id="Overview">
+
+        <div class="container">
+            <div class="row">
+                <p class="bold-font">
+                    Introduction
+                </p>
+                <br>
+                <p class="lead introduction-text">
+                    Convolutional neural network (CNN) models may benefit from the ability of radiology experts to extract the "gist" of abnormality from mammograms. Prior research has demonstrated that radiologists can classify a mammogram as normal or abnormal at better than chance levels after less than a second's exposure to the image. In this work, we combine radiologist gist inputs into pre-trained machine learning models to validate that integrating human gist perception with a CNN model can achieve an AUC (area under the curve) of up to 0.899 – statistically significantly higher than either the gist perception of radiologists or the model without gist input.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Method" class="bg-light">
+
+        <div class="container">
+            <div class="row" id="method-box">
+                <p class="bold-font">
+                    Our Approach:
+                </p>
+                <hr>
+                <img src="public/images/our.png" class="img-fluid" alt="Responsive image">
+                <p></p>
+                <p class="bold-font">
+                    <br>
+                    Baselines:
+                </p>
+                <hr>
+                <img src="public/images/Baseline1.png" class="img-fluid" alt="Responsive image">
+
+
+                <img src="public/images/Baseline2.png" id="baseline2-img" class="pull-left" alt="Responsive image">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="paper">
+        <div class="container">
+            <p class="red-font">
+                Paper
+                <!-- <button class="btn btn-primary">From high to low</button>&nbsp;&nbsp;&nbsp; 
+                        <button class="btn btn-primary">From low to high</button> -->
+            </p>
+            <p>
+                <strong>Human Gist Processing Plus Deep Convolution Neural Network Is Better Than Either Alone in Detection of Breast Cancer in Screening Mammograms
+                </strong>
+                <!-- <a href="https://arxiv.org/abs/1808.00607" target="blank">
+                    [Paper]
+                </a>
+                <a href="http://web.cse.ohio-state.edu/~li.8950/data/document/paper/li2018toward.bib" target="blank">
+                    [Bibtex]
+                </a> -->
+                <!-- <a href="http://web.cse.ohio-state.edu/~li.8950/data/image/scivismemo/VisMemo-scivis.zip">
+                    [bibtex]
+                </a> -->
+                <br> Skylar W. Wurster, Arkadiusz Sitek, Jian Chen, Karla Evans, Gaeun Kim, and Jeremy Wolfe
+                <p class="red-font">Comming soon</p>
+            </p>
+            <br>
+
+        </div>
+    </section>
+
+    <section id="download" class="bg-light">
+        <div class="container">
+
+            <p class="">
+                We shared the following code of our experiment. 
+                <!-- <button class="btn btn-primary">From high to low</button>&nbsp;&nbsp;&nbsp; 
+                        <button class="btn btn-primary">From low to high</button> -->
+            </p>
+            <ul>
+                <li>
+                    <a href="https://github.com/gistmammocnn/DeepMammo" target="blank">
+                        Experiment Code
+                    </a>
+                </li>
+                
+            </ul>
+            <br>
+            
+            <!-- <hr> -->
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Researchers</h2>
+            <br>
+            <div class="row">
+                <div class="col-md-2 portrait-box">
+
+                    <img class="portrait-img" src="public/images/skylar.jpeg">
+                    <br>
+                    <br>
+                    Skylar W. Wurster
+                </div>
+                <div class="col-md-2 portrait-box">
+
+                    <img class="portrait-img" src="public/images/Sitek.jpeg">
+                    <br>
+                    <br>
+                    Arkadiusz Sitek
+                </div>
+                <div class="col-md-2 portrait-box">
+
+                    <img class="portrait-img" src="http://web.cse.ohio-state.edu/~li.8950/data/image/portrait/Jian.png">
+                    <br>
+                    <br>
+                    <a href="http://web.cse.ohio-state.edu/~chen.8028/Home.html" target="blank">Jian Chen</a>
+
+                </div>
+                <div class="col-md-2 portrait-box">
+
+                    <img class="portrait-img" src="public/images/Evans.jpeg">
+                    <br>
+                    <br>
+                    <a href="https://www.york.ac.uk/psychology/staff/academicstaff/karla_evans/" target="blank"> Karla Evans</a>
+
+                </div>
+                <div class="col-md-2 portrait-box">
+
+                    <img class="portrait-img" src="public/images/Kim.jpg">
+                    <br>
+                    <br>
+                    Gaeun Kim
+                </div>
+                <div class="col-md-2 portrait-box">
+
+                    <img class="portrait-img" src="public/images/jeremy.jpg">
+                    <br>
+                    <br>
+                    <a href="http://search.bwh.harvard.edu/new/index.html" target="blank"> Jeremy Wolfe</a>
+
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="acknowledgement" class="bg-light">
+        <div class="container">
+            <p class="bold-font">
+                Acknowledgement
+            </p>
+            <br>
+            <p></p>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-3 page-foot">
+        <div class="container">
+            <!-- <p class="m-0 text-center">Copyright &copy; The Ohio State University 2018</p> -->
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <script src="public/lib/bootstrap.min.js"></script>
+    <script src="public/lib/bootstrap.bundle.min.js"></script>
+    <script src="public/lib/jquery.easing.min.js"></script>
+
+    <script src="public/lib/scrolling-nav.js"></script>
+
+</body>
+
+</html>
