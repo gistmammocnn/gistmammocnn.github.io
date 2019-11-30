@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MammogramGist-CNN</title>
+    <title>Human Gist Processing Augments Deep Learning Breast Cancer Risk Assessment</title>
 
     <!-- Bootstrap core CSS -->
     <link href="public/stylesheets/bootstrap.min.css" rel="stylesheet">
@@ -18,226 +18,261 @@
     <link href="public/stylesheets/style.css" rel="stylesheet">
 
 
-
 </head>
 
 <body id="page-top">
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="public/lib/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="public/lib/jquery-3.3.1.min.js"></script>
 
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="https://d3js.org/d3-color.v1.min.js"></script>
-    <script src="https://d3js.org/d3-hsv.v0.1.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-color.v1.min.js"></script>
+<script src="https://d3js.org/d3-hsv.v0.1.min.js"></script>
 
 
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-inverse fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span>MammogramGist-CNN</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-inverse fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span>Human Gist Processing Augments Deep Learning Breast Cancer Risk Assessment</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#Overview">Overview</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#Method">Methods</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#download">Code</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#paper">Paper</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">Group</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#acknowledgement">Acknowledgement</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-
-    <!-- <header class="page-heading text-white">
-        <div class="container text-center">
-            <h1>
-                <span class="red-font">SciMem</span> Dataset</h1>
-            <p class="lead">Scientific Visualization Memorability Dataset</p>
-        </div>
-    </header> -->
-
-    <section id="Overview">
-
-        <div class="container">
-            <div class="row">
-                
-                <p class="lead introduction-text">
-                    Convolutional neural network (CNN) models may benefit from the ability of radiology experts to extract the "gist" of abnormality from mammograms. Prior research has demonstrated that radiologists can classify a mammogram as normal or abnormal at better than chance levels after less than a second's exposure to the image. In this work, we combine radiologist gist inputs into pre-trained machine learning models to validate that integrating human gist perception with a CNN model can achieve an AUC (area under the curve) of up to 0.899 – statistically significantly higher than either the gist perception of radiologists or the model without gist input.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="Method" class="bg-light">
-
-        <div class="container">
-            <div class="row method-row" id="method-box">
-                <h2 class="red-title">Our Approach</h2>
-                <br>
-                <img src="public/images/Our.jpg" class="img-fluid" alt="Responsive image">
-                <p></p>
-                <p class="red-font">
-                    <br>
-                    Baselines:
-                </p>
-                <hr>
-                <img src="public/images/Baseline1.png" class="img-fluid" alt="Responsive image">
-
-
-                <img src="public/images/Baseline2.png" id="baseline2-img" class="pull-left method-img" >
-
-            </div>
-        </div>
-    </section>
-
-    <section id="paper">
-        <div class="container">
-            <h2 class="red-title">Paper</h2>
-            <br>
-            <p>
-                <strong>Human Gist Processing Plus Deep Convolution Neural Network Is Better Than Either Alone in Detection of Breast Cancer in Screening Mammograms
-                </strong>
-                <!-- <a href="https://arxiv.org/abs/1808.00607" target="blank">
-                    [Paper]
-                </a>
-                <a href="http://web.cse.ohio-state.edu/~li.8950/data/document/paper/li2018toward.bib" target="blank">
-                    [Bibtex]
-                </a> -->
-                <!-- <a href="http://web.cse.ohio-state.edu/~li.8950/data/image/scivismemo/VisMemo-scivis.zip">
-                    [bibtex]
-                </a> -->
-                <br> Skylar W. Wurster, Arkadiusz Sitek, Jian Chen, Karla Evans, Gaeun Kim, and Jeremy Wolfe
-                <p class="red-font">Comming soon</p>
-            </p>
-            <br>
-
-        </div>
-    </section>
-
-    <section id="download" class="bg-light">
-        <div class="container">
-            <h2 class="red-title">Source Code</h2>
-            <br>
-            <p class="">
-                We shared the following code of our experiment. 
-                <!-- <button class="btn btn-primary">From high to low</button>&nbsp;&nbsp;&nbsp; 
-                        <button class="btn btn-primary">From low to high</button> -->
-            </p>
-            <ul>
-                <li>
-                    <a href="https://github.com/gistmammocnn/DeepMammo" target="blank">
-                        Source code on GitHub
-                    </a>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#Overview">Overview</a>
                 </li>
-                
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#Method">Methods</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#download">Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#paper">Paper</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">Group</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#acknowledgement">Acknowledgement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#reference">Reference</a>
+                </li>
             </ul>
-            <br>
-            
-            <!-- <hr> -->
         </div>
-    </section>
+    </div>
+</nav>
 
-    <section id="about">
-        <div class="container">
-            <h2 class="red-title">Researchers</h2>
-            <br>
-            <div class="row">
-                <div class="col-md-2 portrait-box">
 
-                    <img class="portrait-img" src="public/images/skylar.jpeg">
-                    <br>
-                    <br>
-                    Skylar W. Wurster
-                </div>
-                <div class="col-md-2 portrait-box">
+<!-- <header class="page-heading text-white">
+    <div class="container text-center">
+        <h1>
+            <span class="red-font">SciMem</span> Dataset</h1>
+        <p class="lead">Scientific Visualization Memorability Dataset</p>
+    </div>
+</header> -->
 
-                    <img class="portrait-img" src="public/images/Sitek.jpeg">
-                    <br>
-                    <br>
-                    Arkadiusz Sitek
-                </div>
-                <div class="col-md-2 portrait-box">
+<section id="Overview">
 
-                    <img class="portrait-img" src="http://web.cse.ohio-state.edu/~li.8950/data/image/portrait/Jian.png">
-                    <br>
-                    <br>
-                    <a href="http://web.cse.ohio-state.edu/~chen.8028/Home.html" target="blank">Jian Chen</a>
+    <div class="container">
+        <div class="row">
 
-                </div>
-                <div class="col-md-2 portrait-box">
-
-                    <img class="portrait-img" src="public/images/Evans.jpeg">
-                    <br>
-                    <br>
-                    <a href="https://www.york.ac.uk/psychology/staff/academicstaff/karla_evans/" target="blank"> Karla Evans</a>
-
-                </div>
-                <div class="col-md-2 portrait-box">
-
-                    <img class="portrait-img" src="public/images/Kim.jpg">
-                    <br>
-                    <br>
-                    Gaeun Kim
-                </div>
-                <div class="col-md-2 portrait-box">
-
-                    <img class="portrait-img" src="public/images/jeremy.jpg">
-                    <br>
-                    <br>
-                    <a href="http://search.bwh.harvard.edu/new/index.html" target="blank"> Jeremy Wolfe</a>
-
-                </div>
-            </div>
-            <div class="row">
-
-            </div>
+            <p class="lead introduction-text">
+                Convolutional neural network (CNN) models may benefit from the ability of radiology experts to extract
+                the "gist" of abnormality from mammograms. Prior research has demonstrated that radiologists can
+                classify a mammogram as normal or abnormal at better than chance levels after less than a second's
+                exposure to the image. In this work, we combine radiologist gist inputs into pre-trained machine
+                learning models to validate that integrating human gist perception with a CNN model can achieve an AUC
+                (area under the curve) of up to 0.899 – statistically significantly higher than either the gist
+                perception of radiologists or the model without gist input.
+            </p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="acknowledgement" class="bg-light">
-        <div class="container">
-            <h2 class="red-title">Acknowledgement</h2>
+<section id="Method" class="bg-light">
+
+    <div class="container">
+        <div class="row method-row" id="method-box">
+            <h2 class="red-title">Our Approach</h2>
             <br>
+            <img src="public/images/Our.jpg" class="img-fluid" alt="Responsive image">
             <p></p>
+            <p class="red-font">
+                <br>
+                Baselines:
+            </p>
+            <hr>
+            <img src="public/images/Baseline1.png" class="img-fluid" alt="Responsive image">
+
+
+            <img src="public/images/Baseline2.png" id="baseline2-img" class="pull-left method-img">
 
         </div>
-    </section>
+    </div>
+</section>
 
+<section id="paper">
+    <div class="container">
+        <h2 class="red-title">Paper</h2>
+        <br>
+        <p>
+            <strong>Human Gist Processing Plus Deep Convolution Neural Network Is Better Than Either Alone in Detection
+                of Breast Cancer in Screening Mammograms
+            </strong>
+            <!-- <a href="https://arxiv.org/abs/1808.00607" target="blank">
+                [Paper]
+            </a>
+            <a href="http://web.cse.ohio-state.edu/~li.8950/data/document/paper/li2018toward.bib" target="blank">
+                [Bibtex]
+            </a> -->
+            <!-- <a href="http://web.cse.ohio-state.edu/~li.8950/data/image/scivismemo/VisMemo-scivis.zip">
+                [bibtex]
+            </a> -->
+            <br> Skylar W. Wurster, Arkadiusz Sitek, Jian Chen, Karla Evans, Gaeun Kim, and Jeremy Wolfe
+        <p class="red-font">Comming soon</p>
+        </p>
+        <br>
 
-    <!-- Footer -->
-    <footer class="py-3 page-foot">
-        <div class="container">
-            <!-- <p class="m-0 text-center">Copyright &copy; The Ohio State University 2018</p> -->
+    </div>
+</section>
+
+<section id="download" class="bg-light">
+    <div class="container">
+        <h2 class="red-title">Source Code</h2>
+        <br>
+        <p class="">
+            We shared the following code of our experiment.
+            <!-- <button class="btn btn-primary">From high to low</button>&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-primary">From low to high</button> -->
+        </p>
+        <p class="red-font">Comming soon</p>
+        <!-- <ul>
+            <li>
+                <a href="https://github.com/gistmammocnn/DeepMammo" target="blank">
+                    Source code on GitHub
+                </a>
+            </li>
+
+        </ul> -->
+        <br>
+
+        <!-- <hr> -->
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2 class="red-title">Researchers</h2>
+        <br>
+        <div class="row">
+            <div class="col-md-2 portrait-box">
+
+                <img class="portrait-img" src="public/images/skylar.jpeg">
+                <br>
+                <br>
+                Skylar W. Wurster
+            </div>
+            <div class="col-md-2 portrait-box">
+
+                <img class="portrait-img" src="public/images/Sitek.jpeg">
+                <br>
+                <br>
+                Arkadiusz Sitek
+            </div>
+            <div class="col-md-2 portrait-box">
+
+                <img class="portrait-img" src="http://web.cse.ohio-state.edu/~li.8950/data/image/portrait/Jian.png">
+                <br>
+                <br>
+                <a href="http://web.cse.ohio-state.edu/~chen.8028/Home.html" target="blank">Jian Chen</a>
+
+            </div>
+            <div class="col-md-2 portrait-box">
+
+                <img class="portrait-img" src="public/images/Evans.jpeg">
+                <br>
+                <br>
+                <a href="https://www.york.ac.uk/psychology/staff/academicstaff/karla_evans/" target="blank"> Karla
+                    Evans</a>
+
+            </div>
+            <div class="col-md-2 portrait-box">
+
+                <img class="portrait-img" src="public/images/Kim.jpg">
+                <br>
+                <br>
+                Gaeun Kim
+            </div>
+            <div class="col-md-2 portrait-box">
+
+                <img class="portrait-img" src="public/images/jeremy.jpg">
+                <br>
+                <br>
+                <a href="http://search.bwh.harvard.edu/new/index.html" target="blank"> Jeremy Wolfe</a>
+
+            </div>
         </div>
-        <!-- /.container -->
-    </footer>
+        <div class="row">
 
-    <script src="public/lib/bootstrap.min.js"></script>
-    <script src="public/lib/bootstrap.bundle.min.js"></script>
-    <script src="public/lib/jquery.easing.min.js"></script>
+        </div>
+    </div>
+</section>
 
-    <script src="public/lib/scrolling-nav.js"></script>
+<section id="acknowledgement" class="bg-light">
+    <div class="container">
+        <h2 class="red-title">Acknowledgement</h2>
+        <br>
+        <p>A.S., J.M.W, J.C., and K.E conceived the study. S.W. wrote
+            the software and performed the analysis. All assessed the
+            results and worked on the manuscript.</p>
+
+    </div>
+</section>
+
+<section id="reference">
+    <div class="container">
+        <h2 class="red-title">Reference</h2>
+        <br>
+        <p class="">
+            [1] Yala, A., Lehman, C., Schuster, T., Portnoi, T. & Barzilay, R. A deep learning mammography-based model for improved breast cancer risk prediction. Radiology 182716, DOI: 10.1148/radiol.2019182716 (2019).<br>
+            [2] Sitek, A. & Wolfe, J. M. Assessing cancer risk from mammograms: Deep learning is superior to conventional risk models. Radiology 292, 67–68, DOI: 10.1148/radiol.
+            2019190791 (2019).<br>
+            [3] Oliva, A. & Torralba, A. Building the gist of a scene: The role of global image features in recognition. Prog. brain research 155, 23–36, DOI: 10.1016/S0079-6123(06) 55002-2 (2006).<br>
+            [4] Evans, K. K., Georgian-Smith, D., Tambouret, R., Birdwell, R. L. & Wolfe, J. M. The gist of the abnormal: Above-chance medical decision making in the blink of an eye. Psychon. bulletin & review 20, 1170–1175, DOI: https://doi.org/10.3758/s13423-013-0459-3 (2013).<br>
+            [5] Evans, K. K., Haygood, T. M., Cooper, J., Culpan, A.-M. & Wolfe, J. M. A half-second glimpse often lets radiologists identify breast cancer cases even when viewing the mammogram of the opposite breast. Proc. Natl. Acad. Sci. 113, 10292–10297, DOI: 10.1073/pnas.1606187113 (2016).<br>
+            [6] Evans, K. K., Culpan, A.-M. & Wolfe, J. M. Detecting the “gist” of breast cancer in mammograms three years before localized signs of cancer are visible. The Br. J. Radiol. 92, 20190136, DOI: 10.1259/bjr.20190136 (2019).<br>
+            [7] Brennan, P. C. et al. Radiologists can detect the ‘gist’ of breast cancer before any overt signs of cancer appear. Sci. Reports 8, DOI: https://doi.org/10.1038/ s41598-018-26100-5 (2018).<br>
+            [8] Deng, J. et al. ImageNet: A large-scale hierarchical image database. In IEEE Conference on Computer Vision and Pattern Recognition, 248–255, DOI: 10.1109/CVPR.2009.5206848 (2009).<br>
+            [9] Ke, G. et al. LightGBM: A highly efficient gradient boosting decision tree. Adv. Neural Inf. Process. Syst. 3149–3157 (2017). http://papers.nips.cc/paper/ 6907-lightgbm-a-highly-efficient-gradient-boosting-decision-tree. pdf.<br>
+            [10] Akselrod-Ballin, A. et al. Predicting breast cancer by applying deep learning to linked health records and mammograms. Radiology 292, DOI: 10.1148/radiol.2019182622
+            (2019).<br>
+            [11] Rampun, A., Morrow, P. J., Scotney, B. W. & Winder, J. Fully automated breast boundary and pectoral muscle segmentation in mammograms. Artif. Intell. Medicine 79, 28–41, DOI: 10.1016/j.artmed.2017.06.001 (2017).
+        </p>
+
+
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="py-3 page-foot">
+    <div class="container">
+        <!-- <p class="m-0 text-center">Copyright &copy; The Ohio State University 2018</p> -->
+    </div>
+    <!-- /.container -->
+</footer>
+
+<script src="public/lib/bootstrap.min.js"></script>
+<script src="public/lib/bootstrap.bundle.min.js"></script>
+<script src="public/lib/jquery.easing.min.js"></script>
+
+<script src="public/lib/scrolling-nav.js"></script>
 
 </body>
 
